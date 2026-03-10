@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Output Spec"
+  short_description: "Define project output specifications"
+  default_prompt: "Use $project-output-spec to produce or revise docs/project-pipeline/01-output-spec.md from the current project brief."
+
+policy:
+  allow_implicit_invocation: false

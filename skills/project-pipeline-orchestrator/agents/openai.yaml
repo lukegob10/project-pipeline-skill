@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Pipeline Orchestrator"
+  short_description: "Orchestrate staged project creation"
+  default_prompt: "Use $project-pipeline-orchestrator to turn this new product idea into a staged project pipeline in docs/project-pipeline/."
+
+policy:
+  allow_implicit_invocation: true

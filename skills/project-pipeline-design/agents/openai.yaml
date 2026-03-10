@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Pipeline Design"
+  short_description: "Design end-to-end project pipelines"
+  default_prompt: "Use $project-pipeline-design to produce or revise docs/project-pipeline/04-pipeline-design.md from earlier project artifacts."
+
+policy:
+  allow_implicit_invocation: false

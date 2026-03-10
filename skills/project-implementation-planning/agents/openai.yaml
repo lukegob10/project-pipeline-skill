@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Implementation Planning"
+  short_description: "Plan phased project implementation"
+  default_prompt: "Use $project-implementation-planning to produce or revise docs/project-pipeline/05-implementation-plan.md from earlier project artifacts."
+
+policy:
+  allow_implicit_invocation: false

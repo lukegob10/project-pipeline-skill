@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Dependency Mapping"
+  short_description: "Map project dependencies and risks"
+  default_prompt: "Use $project-dependency-mapping to produce or revise docs/project-pipeline/02-dependency-map.md from earlier project artifacts."
+
+policy:
+  allow_implicit_invocation: false

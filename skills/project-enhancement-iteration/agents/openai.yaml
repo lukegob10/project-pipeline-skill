@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Enhancement Iteration"
+  short_description: "Plan post-baseline project enhancements"
+  default_prompt: "Use $project-enhancement-iteration to produce docs/project-pipeline/06-enhancement-roadmap.md after the baseline plan is complete."
+
+policy:
+  allow_implicit_invocation: false
