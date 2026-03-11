@@ -18,6 +18,7 @@ Use these exact headings:
 ## Target Users and Operators
 ## Core Use Cases
 ## Primary Outputs
+## Experience Requirements
 ## Acceptance Criteria
 ## Non-Goals
 ## Open Questions
@@ -27,6 +28,8 @@ Use these exact headings:
 
 Write `None` in `## Upstream Changes Required` when the project brief is sufficient. Otherwise list the earliest upstream artifact that must change before this file can be marked done.
 
+Use `## Experience Requirements` to translate any briefed UI or UX direction into concrete expectations for information density, hierarchy, navigation model, responsive behavior, accessibility, state feedback, and performance. If the project has no user-facing surface, write `Not applicable`.
+
 Use `Done: ready for $project-dependency-mapping` or `Blocked: <reason>` in `## Completion Decision`.
 
 ## Review Rubric
@@ -35,6 +38,7 @@ Use `Done: ready for $project-dependency-mapping` or `Blocked: <reason>` in `## 
 - Target users and operators are explicit and distinct.
 - Core use cases describe user outcomes rather than implementation mechanics.
 - Primary outputs are concrete enough to evaluate later.
+- Experience requirements are concrete, observable, and consistent with the brief.
 - Acceptance criteria are testable.
 - Non-goals prevent scope creep.
 - The artifact stays stack-agnostic.
@@ -42,6 +46,7 @@ Use `Done: ready for $project-dependency-mapping` or `Blocked: <reason>` in `## 
 ## Handoff Checklist
 
 - Read the latest `00-project-brief.md` before drafting.
+- Carry any explicit experience direction into `## Experience Requirements` instead of leaving it implicit.
 - Preserve existing intent unless the brief changed.
 - Call out unresolved questions instead of filling gaps with framework assumptions.
 - If blocked, point back to `00-project-brief.md`.

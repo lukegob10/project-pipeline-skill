@@ -32,6 +32,7 @@ Use `Done: ready for $project-schema-data-model` or `Blocked: <reason>` in `## C
 ## Review Rubric
 
 - System components cover the core solution surface implied by the output spec.
+- System components include user-facing surfaces and performance-critical delivery pieces when relevant.
 - External systems and integrations are explicit.
 - The dependency graph shows critical relationships and sequencing.
 - Coupling and risk notes surface fragile boundaries and likely bottlenecks.
@@ -41,7 +42,7 @@ Use `Done: ready for $project-schema-data-model` or `Blocked: <reason>` in `## C
 ## Handoff Checklist
 
 - Read `00-project-brief.md` and `01-output-spec.md` before drafting.
-- Model only the dependencies needed to satisfy the output spec.
+- Model only the dependencies needed to satisfy the output spec, including experience-critical delivery dependencies for UI-heavy projects.
 - Identify unknown integrations in `## Open Questions`.
 - If blocked, point to the earliest upstream artifact that must change.
 - If done, ensure no placeholder text remains.

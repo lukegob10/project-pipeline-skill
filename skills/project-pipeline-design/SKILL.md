@@ -17,13 +17,14 @@ Produce the canonical pipeline design artifact for the current greenfield projec
 - `docs/project-pipeline/03-schema-data-model.md`
 - Any later project-pipeline artifacts that already exist, if revising
 - [references/phase-template.md](references/phase-template.md)
+- [../shared/references/ui-ux-quality-bar.md](../shared/references/ui-ux-quality-bar.md) when the project includes user-facing UI
 
 ## Workflow
 
 1. Confirm the request remains inside the greenfield baseline workflow.
-2. Read `00` through `03` and the phase template before drafting.
+2. Read `00` through `03` and the phase template before drafting. If the project includes user-facing surfaces, also read the shared UI/UX reference.
 3. Create or revise `docs/project-pipeline/04-pipeline-design.md` using the exact headings from the template.
-4. Describe how work moves through the system, where control decisions happen, how data flows, and how failures are handled and observed.
+4. Describe how work moves through the system, where control decisions happen, how data flows, how failures are handled and observed, and how user-facing responsiveness is protected when the project includes UI.
 5. If any upstream artifact is insufficient or contradictory, populate `## Upstream Changes Required`, mark the artifact blocked, and stop.
 6. If you revise `04-pipeline-design.md`, assume `05` and `06` may need revalidation by the orchestrator.
 

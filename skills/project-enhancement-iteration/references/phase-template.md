@@ -41,12 +41,14 @@ Use `Done: enhancement roadmap ready` or `Blocked: <reason>` in `## Completion D
 - The prioritized roadmap orders work by value, dependency, or risk.
 - Complexity increments describe how the system grows over time.
 - Dependencies and preconditions call out what must exist before each enhancement.
-- Risk and impact explain cost, complexity, or operational effects.
+- Risk and impact accounts for experience polish and performance work without treating baseline UX quality as optional.
+- Risk and impact explain cost, complexity, operational effects, and user-facing tradeoffs.
 
 ## Handoff Checklist
 
 - Read `00` through `05` before drafting.
 - Keep the roadmap optional and post-baseline.
+- For UI-heavy projects, keep baseline quality work in `05` and reserve this roadmap for follow-on polish, advanced interactions, and deeper optimization.
 - Use `## Open Questions` for unresolved prioritization or sequencing choices.
 - If blocked, point to the earliest upstream artifact that must change.
 - If done, ensure no placeholder text remains.

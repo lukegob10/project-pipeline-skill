@@ -18,13 +18,14 @@ Produce the canonical post-baseline enhancement roadmap for the current greenfie
 - `docs/project-pipeline/04-pipeline-design.md`
 - `docs/project-pipeline/05-implementation-plan.md`
 - [references/phase-template.md](references/phase-template.md)
+- [../shared/references/ui-ux-quality-bar.md](../shared/references/ui-ux-quality-bar.md) when the project includes user-facing UI
 
 ## Workflow
 
 1. Confirm that `05-implementation-plan.md` exists and is complete before doing any enhancement planning.
-2. Read `00` through `05` and the phase template before drafting.
+2. Read `00` through `05` and the phase template before drafting. If the project includes user-facing surfaces, also read the shared UI/UX reference.
 3. Create or revise `docs/project-pipeline/06-enhancement-roadmap.md` using the exact headings from the template.
-4. Organize enhancements as post-baseline increments rather than changes to the baseline definition.
+4. Organize enhancements as post-baseline increments rather than changes to the baseline definition. For UI-heavy projects, treat higher-order polish, richer workflows, and deeper performance optimization as enhancement themes only after the baseline quality bar is already covered upstream.
 5. If any upstream artifact is insufficient or contradictory, populate `## Upstream Changes Required`, mark the artifact blocked, and stop.
 6. Keep the roadmap stack-agnostic unless the earlier artifacts explicitly constrain technology.
 

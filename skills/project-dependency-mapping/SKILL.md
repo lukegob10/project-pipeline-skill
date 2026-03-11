@@ -15,13 +15,14 @@ Produce the canonical dependency map for the current greenfield project. Transla
 - `docs/project-pipeline/01-output-spec.md`
 - Any later project-pipeline artifacts that already exist, if revising
 - [references/phase-template.md](references/phase-template.md)
+- [../shared/references/ui-ux-quality-bar.md](../shared/references/ui-ux-quality-bar.md) when the project includes user-facing UI
 
 ## Workflow
 
 1. Confirm the request is still greenfield-only.
-2. Read `00-project-brief.md`, `01-output-spec.md`, and the phase template before drafting.
+2. Read `00-project-brief.md`, `01-output-spec.md`, and the phase template before drafting. If the project includes user-facing surfaces, also read the shared UI/UX reference.
 3. Create or revise `docs/project-pipeline/02-dependency-map.md` using the exact headings from the template.
-4. Model internal components, external systems, operational dependencies, and major coupling risks.
+4. Model internal components, external systems, operational dependencies, and major coupling risks. For UI-heavy projects, include the client runtime, design system, asset delivery, search, telemetry, or other experience-critical dependencies needed to satisfy the output spec.
 5. If `00` or `01` is insufficient or contradictory, populate `## Upstream Changes Required`, mark the artifact blocked, and stop.
 6. If you revise `02-dependency-map.md`, assume `03` and later artifacts may need revalidation by the orchestrator.
 

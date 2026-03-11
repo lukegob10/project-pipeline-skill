@@ -18,13 +18,14 @@ Produce the canonical implementation plan for the current greenfield project. Co
 - `docs/project-pipeline/04-pipeline-design.md`
 - Any later project-pipeline artifacts that already exist, if revising
 - [references/phase-template.md](references/phase-template.md)
+- [../shared/references/ui-ux-quality-bar.md](../shared/references/ui-ux-quality-bar.md) when the project includes user-facing UI
 
 ## Workflow
 
 1. Confirm the request remains inside the greenfield baseline workflow.
-2. Read `00` through `04` and the phase template before drafting.
+2. Read `00` through `04` and the phase template before drafting. If the project includes user-facing surfaces, also read the shared UI/UX reference.
 3. Create or revise `docs/project-pipeline/05-implementation-plan.md` using the exact headings from the template.
-4. Define milestones, task dependencies, MVP boundaries, test strategy, and key delivery risks.
+4. Define milestones, task dependencies, MVP boundaries, experience quality workstreams, test strategy, and key delivery risks. For UI-heavy projects, plan the design system, responsive QA, accessibility, and frontend performance validation as first-class work.
 5. If any upstream artifact is insufficient or contradictory, populate `## Upstream Changes Required`, mark the artifact blocked, and stop.
 6. If you revise `05-implementation-plan.md`, require enhancement planning to be revisited before `06` can be considered current.
 

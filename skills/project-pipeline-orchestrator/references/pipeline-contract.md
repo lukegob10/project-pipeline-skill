@@ -33,13 +33,16 @@ Use these exact headings:
 ## Project Idea
 ## Desired Outcome
 ## Target Users
+## Experience Direction
 ## Constraints
 ## Success Criteria
 ## Non-Goals
 ## Explicit Assumptions
 ```
 
-Refresh `00-project-brief.md` whenever the user changes the core goal, target users, constraints, or success criteria.
+For projects with user-facing surfaces, use `## Experience Direction` to record the primary UI reference model, layout density and hierarchy preferences, navigation or information architecture assumptions, palette constraints, and any explicit frontend performance expectations. For non-UI projects, write `Not applicable`.
+
+Refresh `00-project-brief.md` whenever the user changes the core goal, target users, experience direction, constraints, or success criteria.
 
 ## Worker Map
 
@@ -54,11 +57,11 @@ Refresh `00-project-brief.md` whenever the user changes the core goal, target us
 
 Use these minimum heading checks when resuming:
 
-- `01-output-spec.md`: `Problem Statement`, `Target Users and Operators`, `Core Use Cases`, `Primary Outputs`, `Acceptance Criteria`, `Non-Goals`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
+- `01-output-spec.md`: `Problem Statement`, `Target Users and Operators`, `Core Use Cases`, `Primary Outputs`, `Experience Requirements`, `Acceptance Criteria`, `Non-Goals`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
 - `02-dependency-map.md`: `System Components`, `External Systems and Integrations`, `Dependency Graph`, `Coupling and Risk Notes`, `Operational Dependencies`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
 - `03-schema-data-model.md`: `Core Entities`, `Data Structures and Fields`, `Contracts and Interfaces`, `State Transitions`, `Validation Rules`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
-- `04-pipeline-design.md`: `End-to-End Flow`, `Control Flow`, `Data Flow`, `Failure Handling`, `Observability Points`, `Operational Assumptions`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
-- `05-implementation-plan.md`: `Delivery Strategy`, `Milestones`, `Task Graph`, `MVP Cutline`, `Test Strategy`, `Risks and Mitigations`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
+- `04-pipeline-design.md`: `End-to-End Flow`, `Control Flow`, `Data Flow`, `Failure Handling`, `Observability Points`, `User Experience and Responsiveness`, `Operational Assumptions`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
+- `05-implementation-plan.md`: `Delivery Strategy`, `Milestones`, `Task Graph`, `MVP Cutline`, `Experience Quality Plan`, `Test Strategy`, `Risks and Mitigations`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
 - `06-enhancement-roadmap.md`: `Baseline Preconditions`, `Enhancement Themes`, `Prioritized Roadmap`, `Complexity Increments`, `Dependencies and Preconditions`, `Risk and Impact`, `Open Questions`, `Upstream Changes Required`, `Completion Decision`
 
 ## Completion Rules
@@ -70,13 +73,14 @@ A stage counts as complete only when all of the following are true:
 - The artifact has no placeholder text such as `[TODO]` or `TBD`.
 - `## Completion Decision` starts with `Done:`.
 
-Treat `00-project-brief.md` as complete when all required headings are present and the contents match the latest user request.
+Treat `00-project-brief.md` as complete when all required headings are present and the contents match the latest user request, including any explicit experience direction.
 
 ## Stale Rules
 
 Treat an artifact as stale when any of the following is true:
 
 - The current request changes project goal, users, constraints, success criteria, or scope.
+- The current request changes explicit UI or UX direction, palette constraints, or frontend performance expectations.
 - The artifact conflicts with an earlier artifact.
 - The artifact depends on assumptions that were removed or changed upstream.
 - A later artifact lists this file in `## Upstream Changes Required`.

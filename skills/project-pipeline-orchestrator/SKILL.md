@@ -14,6 +14,7 @@ Use this skill as the default entrypoint for the project creation suite. Drive t
 - Support only greenfield projects. Reject existing-repo rescue, modernization, or refactor-only requests as out of scope for v1.
 - Persist all planning artifacts in `docs/project-pipeline/`.
 - Read [references/pipeline-contract.md](references/pipeline-contract.md) before deciding what to do next.
+- If the project includes user-facing surfaces, read [../shared/references/ui-ux-quality-bar.md](../shared/references/ui-ux-quality-bar.md) before refreshing the brief.
 - Treat the suite as planning-first. Do not scaffold code, choose frameworks, or generate implementation files as part of this workflow.
 - Drive the baseline sequence through `00` to `05`. Use `06` only after `05` is complete and only when the user asks for post-baseline enhancement planning.
 
@@ -21,6 +22,7 @@ Use this skill as the default entrypoint for the project creation suite. Drive t
 
 1. Inspect `docs/project-pipeline/` and compare any existing artifacts with the latest user request.
 2. Create or refresh `docs/project-pipeline/00-project-brief.md` when it is missing, incomplete, or contradicted by the current request.
+   - For user-facing projects, record the visual direction, density and hierarchy preferences, palette constraints, and frontend performance expectations under `## Experience Direction`.
 3. Determine the highest completed non-stale stage using the contract reference.
 4. Route to the next required worker skill:
    - `01` -> `$project-output-spec`
