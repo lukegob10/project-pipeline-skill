@@ -1,7 +1,0 @@
-interface:
-  display_name: "Project Schema Data Model"
-  short_description: "Design schemas, contracts, data models"
-  default_prompt: "Use $project-schema-data-model to produce or revise docs/project-pipeline/03-schema-data-model.md from earlier project artifacts."
-
-policy:
-  allow_implicit_invocation: false
